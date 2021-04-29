@@ -1,0 +1,106 @@
+/* CUSTOM STYLE */
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: #202030;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.underline-custom{
+    position: relative;
+}
+
+.underline-custom:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D32F2F;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.underline-custom:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+.yellow-to-red{
+    transition: all .3s ease-out;
+}
+
+.yellow-to-red:focus{
+    color: #D32F2F;
+    outline:none;
+}
+
+
+@media (min-width: 1024px) {
+    .bm-burger-button{
+        visibility: hidden;
+    }
+    
+}
+
+.blue-to-red{
+    transition: all .3s ease-out;
+}
+
+.blue-to-red:focus{
+    color: #D32F2F;
+    outline:none;
+}
+
+
+.hr{
+    border: 2px solid #D32F2F
+}
+
+.custom-shadow{
+    box-shadow: 1px 1px 8px #F9C80E;
+}
+
+input{
+    background-color: #C4C4C4;
+    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-out;
+
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #D32F2F;
+}
+
+input::placeholder{
+    color: #202030;
+}
+
+textarea{
+    background-color: #C4C4C4;
+    margin: 25px 0px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-out;
+
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid #D32F2F;
+}
+
+textarea::placeholder{
+    color: #202030;
+
+}
