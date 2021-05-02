@@ -64,7 +64,7 @@ body{
 }
 
 .custom-shadow{
-    box-shadow: 1px 1px 8px #F9C80E;
+    box-shadow: 1px 1px 8px #C4C4C4;
 }
 
 input{
@@ -72,9 +72,15 @@ input{
     border-radius: 3px;
     padding: 5px;
     border: 2px solid transparent;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
 
 }
+
+input:hover{
+    outline: none;
+    border: 2px solid #D32F2F;
+}
+
 
 input:focus{
     outline: none;
@@ -95,6 +101,11 @@ textarea{
 
 }
 
+textarea:hover{
+    outline: none;
+    border: 2px solid #D32F2F;
+}
+
 textarea:focus{
     outline: none;
     border: 2px solid #D32F2F;
@@ -104,3 +115,69 @@ textarea::placeholder{
     color: #202030;
 
 }
+
+/* IMG ANIMATION */ 
+
+.fade-in-down {
+    animation: fadeInDown ease-in-out forwards 1s;
+    -webkit-animation: fadeInDown ease-in-out forwards 1s;
+    -moz-animation: fadeInDown ease-in-out forwards 1s;
+    -o-animation: fadeInDown ease-in-out forwards 1s;
+    -ms-animation: fadeInDown ease-in-out forwards 1s;
+  }
+
+
+  @keyframes fadeInDown {
+    from {
+        opacity:0;
+        padding-bottom: 200px;
+    }
+    to {
+        opacity:1;
+        padding-bottom: 0px;
+    }
+  }
+  
+  @-moz-keyframes fadeInDown {
+    from {
+        opacity:0;
+        padding-bottom: 200px;
+    }
+    to {
+        opacity:1;
+        padding-bottom: 0px;
+    }
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    from {
+        opacity:0;
+        padding-bottom: 200px;
+    }
+    to {
+        opacity:1;
+        padding-bottom: 0px;
+    }
+  }
+  
+  @-o-keyframes fadeInDown {
+    from {
+        opacity:0;
+        padding-bottom: 200px;
+    }
+    to {
+        opacity:1;
+        padding-bottom: 0px;
+    }
+  }
+  
+  @-ms-keyframes fadeInDown {
+    from {
+        opacity:0;
+        padding-bottom: 200px;
+    }
+    to {
+        opacity:1;
+        padding-bottom: 0px;
+    }
+  }
