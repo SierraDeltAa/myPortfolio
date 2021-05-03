@@ -1,17 +1,17 @@
 import React from "react";
-import icon from "../assets/img/realisationsIcon.svg"
 import Image from "../components/Image"
 import ChapterTitle from "../components/ChapterTitle"
 import Project from "../components/Project"
 import Separation from "../components/Separation"
-import html from "../assets/img/languages/html.svg"
-import css from "../assets/img/languages/css.svg"
-import javascript from "../assets/img/languages/javascript.svg"
-import php from "../assets/img/languages/php.svg"
-import reactjs from "../assets/img/languages/react.svg"
-import mongodb from "../assets/img/languages/mongodb.svg"
-import nodejs from "../assets/img/languages/nodejs.svg"
-import mysql from "../assets/img/languages/mysql.svg"
+import icon from "url:../assets/img/realisationsIcon.svg"
+import html from "url:../assets/img/languages/html.svg"
+import css from "url:../assets/img/languages/css.svg"
+import javascript from "url:../assets/img/languages/javascript.svg"
+import php from "url:../assets/img/languages/php.svg"
+import reactjs from "url:../assets/img/languages/react.svg"
+import mongodb from "url:../assets/img/languages/mongodb.svg"
+import nodejs from "url:../assets/img/languages/nodejs.svg"
+import mysql from "url:../assets/img/languages/mysql.svg"
 
 export default function Realisations(){
     return(

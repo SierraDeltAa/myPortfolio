@@ -1,5 +1,5 @@
 import React from "react"
-import github from "../assets/img/github.svg"
+import github from "url:../assets/img/github.svg"
 
 
 export default function Project(props){

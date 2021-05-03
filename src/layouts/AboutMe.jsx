@@ -2,7 +2,7 @@ import React from "react";
 import ChapterTitle from "../components/ChapterTitle"
 import AboutMeText from "../components/AboutMeText"
 import Separation from "../components/Separation"
-import icon from "../assets/img/aboutMeIcon.svg"
+import icon from "url:../assets/img/aboutMeIcon.svg"
 
 export default function AboutMe(){
     return(

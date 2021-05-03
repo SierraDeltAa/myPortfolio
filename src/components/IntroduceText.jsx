@@ -1,7 +1,5 @@
 import React from "react";
 import ReactTypingEffect from 'react-typing-effect';
-import TypeText from 'react-typing-text'
-import Typewriter from 'typewriter-effect';
 
 export default function IntroduceText(){
 

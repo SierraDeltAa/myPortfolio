@@ -2,6 +2,7 @@ import React from "react";
 import Name from "../components/Name"
 import Title from "../components/Title"
 import { slide as Menu } from 'react-burger-menu'
+import Cv from "url:../assets/Cv_Denil_Merad.pdf"
 
 export default function Header(){
 var styles = {
@@ -57,14 +58,14 @@ var styles = {
           <Title link="#aboutMe">À propos </Title> 
           <Title link="#realisations">Réalisations </Title> 
           <Title link="#contact">Contact </Title> 
-          <Title link="../assets/Cv_Denil_Merad.pdf" download="Cv_Denil_Merad.pdf">Mon Cv </Title> 
+          <Title link={Cv} target="_blank">Mon Cv </Title> 
         </div>
         <Menu className={"w-60 px-4 py-8 bg-gray-200 opacity-80 lg:hidden"} styles={styles} right={true} >
             <div className="flex flex-col">
               <Title link="#aboutMe">À propos </Title> 
               <Title link="#realisations">Réalisations </Title> 
               <Title link="#contact">Contact </Title> 
-              <Title link="../assets/Cv_Denil_Merad.pdf" download="Cv_Denil_Merad.pdf">Mon Cv </Title> 
+              <Title link={Cv} target="_blank">Mon Cv </Title> 
             </div>
         </Menu>
       </div>
