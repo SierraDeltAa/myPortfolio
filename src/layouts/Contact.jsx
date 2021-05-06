@@ -16,7 +16,7 @@ export default function Contact(){
             </div>
             <div className="flex flex-row mx-auto w-60 justify-between ">
                 <a href="https://github.com/SierraDeltAa/" className="text-gray-500 flex flex-row p-2 transition duration-300 hover:text-gray-200" target="_blank"><img src={github} width="30px"/><p className="mt-1 ml-2 text-sm">Github</p> </a>
-                <a href="https://www.linkedin.com/in/denil-merad" className="text-gray-500 flex flex-row p-2 transition duration-300 hover:text-gray-200" target="_blank"><img src={linkedin} width="30px"/><p className="mt-1 ml-2 text-sm">Linkedin</p></a>
+                <a href="https://www.linkedin.com/in/denil-merad-180b5b1b6/" className="text-gray-500 flex flex-row p-2 transition duration-300 hover:text-gray-200" target="_blank"><img src={linkedin} width="30px"/><p className="mt-1 ml-2 text-sm">Linkedin</p></a>
             </div>
         </div>
     )
