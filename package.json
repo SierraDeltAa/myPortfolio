@@ -1,9 +1,9 @@
 {
-  "homepage": "http://SieraDeltAa.github.io/portfolio",
-  "name": "portfolioReact",
+  "homepage": "http://SierraDeltAa.github.io/myPortfolio",
+  "name": "myPortfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "index.jsx",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -21,17 +21,15 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-beta.2",
-    "@tailwindcss/postcss7-compat": "^2.1.2",
+    "@parcel/transformer-raw": "^2.0.0-alpha.3",
     "cssnano": "^5.0.2",
+    "gh-pages": "^3.1.0",
+    "parcel": "^2.0.0-beta.2",
+    "postcss-cli": "^8.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^3.1.3",
-    "autoprefixer": "^10.2.5",
-    "gh-pages": "^3.1.0",
-    "parcel": "^2.0.0-beta.2",
-    "postcss": "^8.2.13",
     "react-burger-menu": "^3.0.6",
     "react-mail-form": "^2.1.0",
     "react-typing-effect": "^2.0.5",
