@@ -3,7 +3,6 @@ import Name from "../components/Name"
 import Title from "../components/Title"
 import { slide as Menu } from 'react-burger-menu'
 import Cv from "url:../assets/Cv_Denil_Merad.pdf"
-import Fade from "react-reveal/Fade"
 
 export default function Header(){
 var styles = {
@@ -52,7 +51,6 @@ var styles = {
 };
 
   return (
-    <Fade>
       <div className="">
         <div className="border border-transparent">
           <Name />
@@ -72,6 +70,5 @@ var styles = {
           </Menu>
         </div>
       </div>
-    </Fade>
   );
 }
