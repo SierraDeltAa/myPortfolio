@@ -1,10 +1,23 @@
 import React from "react";
-import imgUrl from "url:../assets/img/ProfilPic.png"
+import leftImg from "url:../assets/img/leftPic.png"
+import rightImg from "url:../assets/img/rightPic.png"
+import Slide from 'react-reveal/Slide';
+
 
 export default function ProfilePic(){
     return(
-        <div className="">
-                <img className="mx-auto w-60 rounded-full " id="home" src={imgUrl} />
+        <div className="flex flex-row justify-center">
+            <Slide left>
+                <div>
+                    <img className="mx-auto" id="home" src={leftImg} />
+                </div>
+            </Slide>
+            <Slide right>
+                <div className="mr-0.5">
+                    <img className="mx-auto " id="home" src={rightImg} />
+                </div>
+            </Slide>
+
         </div>
     )
 }

@@ -33,6 +33,7 @@
   "dependencies": {
     "react-burger-menu": "^3.0.6",
     "react-mail-form": "^2.1.0",
+    "react-reveal": "^1.2.2",
     "react-typing-effect": "^2.0.5",
     "tailwindcss": "^2.1.2"
   }

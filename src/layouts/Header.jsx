@@ -3,6 +3,7 @@ import Name from "../components/Name"
 import Title from "../components/Title"
 import { slide as Menu } from 'react-burger-menu'
 import Cv from "url:../assets/Cv_Denil_Merad.pdf"
+import Fade from "react-reveal/Fade"
 
 export default function Header(){
 var styles = {
@@ -51,24 +52,26 @@ var styles = {
 };
 
   return (
-    <div className="">
-      <div className="border border-transparent">
-        <Name />
-        <div className="hidden w-7/12 lg:flex fixed justify-end top-0 right-0 lg:mr-16">
-          <Title link="#aboutMe">À propos </Title> 
-          <Title link="#realisations">Réalisations </Title> 
-          <Title link="#contact">Contact </Title> 
-          <Title link={Cv} target="_blank">Mon Cv </Title> 
+    <Fade>
+      <div className="">
+        <div className="border border-transparent">
+          <Name />
+          <div className="hidden w-7/12 lg:flex fixed justify-end top-0 right-0 lg:mr-16">
+            <Title link="#aboutMe">À propos </Title> 
+            <Title link="#realisations">Réalisations </Title> 
+            <Title link="#contact">Contact </Title> 
+            <Title link={Cv} target="_blank">Mon Cv </Title> 
+          </div>
+          <Menu className={"w-60 px-4 py-8 bg-gray-200 opacity-80 lg:hidden"} styles={styles} right={true} >
+              <div className="flex flex-col">
+                <Title link="#aboutMe">À propos </Title> 
+                <Title link="#realisations">Réalisations </Title> 
+                <Title link="#contact">Contact </Title> 
+                <Title link={Cv} target="_blank">Mon Cv </Title> 
+              </div>
+          </Menu>
         </div>
-        <Menu className={"w-60 px-4 py-8 bg-gray-200 opacity-80 lg:hidden"} styles={styles} right={true} >
-            <div className="flex flex-col">
-              <Title link="#aboutMe">À propos </Title> 
-              <Title link="#realisations">Réalisations </Title> 
-              <Title link="#contact">Contact </Title> 
-              <Title link={Cv} target="_blank">Mon Cv </Title> 
-            </div>
-        </Menu>
       </div>
-    </div>
+    </Fade>
   );
 }
